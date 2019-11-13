@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OCR", "OCR\OCR.csproj", "{0549F76C-CFA3-44BA-8B6E-207CA5648408}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tesseract.NetCore", "Tesseract\Tesseract.NetCore.csproj", "{D0EA1687-6E3C-4857-BEBF-A778716C4877}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0549F76C-CFA3-44BA-8B6E-207CA5648408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0549F76C-CFA3-44BA-8B6E-207CA5648408}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0549F76C-CFA3-44BA-8B6E-207CA5648408}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0549F76C-CFA3-44BA-8B6E-207CA5648408}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0EA1687-6E3C-4857-BEBF-A778716C4877}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0EA1687-6E3C-4857-BEBF-A778716C4877}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0EA1687-6E3C-4857-BEBF-A778716C4877}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0EA1687-6E3C-4857-BEBF-A778716C4877}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64B9B898-3038-4C70-B89B-3B603BDC6D78}
+	EndGlobalSection
+EndGlobal

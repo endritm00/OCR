@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div>
+    <div class="col">
+        <input id="id" type="number" />ID:
+        <input id="emri" type="text" /> Emri:
+
+      
+        
+        <button onclick="newUser()">Krijo</button>
+        <button onclick="fshij()">Fshij</button>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    function newUser() {
+        var user = {
+            Id: $("#id").val(),
+            Emri : $("#emri").val()
+        };
+        $.ajax({
+            url: "@Url.Action("Create","User")",
+            type: "POST",
+            dataType: "json",
+            contentType: "application/json",
+            data: JSON.stringify(user),
+            statusCode: {
+                200: function () {
+                    swal("Success", "Useri u shtua.", "success");
+                },
+                400: function (data) {
+                    swal("Error", "Bad request error (HTTP 400).", "error");
+                },
+                401: function () {
+                    swal("Error", "Unauthorized error (HTTP 401)", "error");
+                },
+                500: function (data) {
+                    swal("Error", "Internal server error (HTTP 500)", "error");
+                }
+            },
+            error: function (request, status, error) {
+                swal("Error", request.status + ": " + error, "error");
+            }
+
+        });
+    }
+
+
+</script>
+

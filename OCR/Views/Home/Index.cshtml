@@ -1,0 +1,24 @@
+﻿@page
+@model OCR.ViewModels.IndexViewModel;
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="col-md-12" id="wrap" style="display:flex;justify-content:center;margin-top:10px">
+    <form class="form-group">
+        <div class="col-md-12 justify">
+            <div class="form-group">
+                <input type="file" id="file" class="form-control" />
+            </div>
+        </div>
+        <div class="row col-md-12 block">
+            <div class="col-md-6 pull-left">
+                <textarea rows="20" style="width:100%;resize:none;height:100%" placeholder="Receipt content:">
+                </textarea>
+            </div>
+            <div class="col-md-6 pull-right">
+                <img src="https://support.sideline.com/hc/article_attachments/115017983223/receipt.png" height="420" />
+            </div>
+        </div>
+    </form>
+</div>
